@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Site da empresa PALMA Pizzas - Eventos",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/palmapizzas/"
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/palmapizzas/",
+    "dev": "pnpm exec eleventy --serve --watch"
   },
   "keywords": [],
   "author": "",
