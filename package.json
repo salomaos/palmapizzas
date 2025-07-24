@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix=/palmapizzas/",
+    "build-ghpages": "npx @11ty/eleventy",
     "dev": "pnpm exec eleventy --serve --watch"
   },
   "keywords": [],
