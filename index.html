@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzas Napolitanas Artesanais - Eventos Exclusivos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav class="container">
-        <div class="logo">PALMA</div>
+        <div class="logo">
+          <img
+            src="assets/images/logo-transparent.png"
+            alt="Logo da PALMA Pizzas"
+          />
+        </div>
         <ul class="nav-links">
           <li><a href="#home">Início</a></li>
           <li><a href="#about">Sobre</a></li>
@@ -25,8 +31,14 @@
       <div class="container">
         <div class="hero-content">
           <h1>
-            Pizzas <span class="highlight">Napolitanas</span><br />Artesanais
+            Melhor Serivoço de <span class="highlight">Pizzas</span> de São
+            Paulo
           </h1>
+          <img
+            class="hero-image"
+            src="/assets/images/logo-with-bg.png"
+            alt="Logo da PALMA"
+          />
           <p>
             Transformamos seus eventos em experiências gastronômicas únicas com
             nossas autênticas pizzas napolitanas, preparadas com ingredientes
@@ -60,7 +72,12 @@
             </p>
             <div class="experience-badge">✨ +4 ANOS DE EXPERIÊNCIA ✨</div>
           </div>
-          <div class="about-image">🍕</div>
+          <div class="about-image">
+            <img
+              src="assets/images/pizza-smoke.jpg"
+              alt="Imagem de uma pizza napolitana artesanal"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -71,7 +88,9 @@
         <h2 class="section-title">Serviços para Eventos</h2>
         <div class="services-grid">
           <div class="service-card">
-            <div class="service-icon">🎉</div>
+            <div class="service-icon">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
             <h3>Eventos Corporativos</h3>
             <p>
               Impressione seus clientes e colaboradores com pizzas napolitanas
@@ -79,7 +98,7 @@
             </p>
           </div>
           <div class="service-card">
-            <div class="service-icon">💍</div>
+            <div class="service-icon"><i class="fa-solid fa-gifts"></i></div>
             <h3>Casamentos & Festas</h3>
             <p>
               Torne sua celebração inesquecível com um menu exclusivo de pizzas
@@ -87,7 +106,9 @@
             </p>
           </div>
           <div class="service-card">
-            <div class="service-icon">🎂</div>
+            <div class="service-icon">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
             <h3>Aniversários</h3>
             <p>
               Celebre momentos especiais com sabores únicos. Pizzas napolitanas
@@ -106,7 +127,7 @@
         </h2>
         <div class="features-grid">
           <div class="feature">
-            <div class="feature-icon">🔥</div>
+            <div class="feature-icon"><i class="fa-solid fa-fire"></i></div>
             <h4>Forno à Lenha</h4>
             <p>
               Cozimento em alta temperatura que garante a textura perfeita e
@@ -114,7 +135,9 @@
             </p>
           </div>
           <div class="feature">
-            <div class="feature-icon">🌾</div>
+            <div class="feature-icon">
+              <i class="fa-solid fa-wheat-awn"></i>
+            </div>
             <h4>Ingredientes Premium</h4>
             <p>
               Selecionamos os melhores ingredientes para garantir qualidade e
@@ -122,12 +145,14 @@
             </p>
           </div>
           <div class="feature">
-            <div class="feature-icon">👨‍🍳</div>
+            <div class="feature-icon">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
             <h4>Mestres Pizzaiolos</h4>
             <p>Equipe especializada com técnicas tradicionais napolitanas</p>
           </div>
           <div class="feature">
-            <div class="feature-icon">⚡</div>
+            <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
             <h4>Serviço Express</h4>
             <p>Preparação rápida sem comprometer a qualidade artesanal</p>
           </div>
@@ -150,15 +175,7 @@
             target="_blank"
             rel="noopener"
           >
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              style="width: 20px; height: 20px"
-            >
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-              />
-            </svg>
+            <i class="fa-brands fa-whatsapp"></i>
             WhatsApp
           </a>
           <a
@@ -167,15 +184,7 @@
             target="_blank"
             rel="noopener"
           >
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              style="width: 20px; height: 20px"
-            >
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-            </svg>
+            <i class="fa-brands fa-instagram"></i>
             Instagram
           </a>
         </div>
@@ -214,9 +223,9 @@
       window.addEventListener("scroll", function () {
         const header = document.querySelector("header");
         if (window.scrollY > 100) {
-          header.style.background = "rgba(0, 0, 0, 0.95)";
+          header.style.background = "rgba(255, 255, 255, 0.95)";
         } else {
-          header.style.background = "#000";
+          header.style.background = "#fff";
         }
       });
     </script>
