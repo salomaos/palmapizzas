@@ -37,6 +37,29 @@ nav {
   width: 80px;
 }
 
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-contact-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.contact-btn-nav {
+  padding: 0.6rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -59,8 +82,12 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23222" width="1200" height="600"/><circle fill="%23ffd503" cx="300" cy="200" r="80" opacity="0.1"/><circle fill="%23ffd503" cx="800" cy="400" r="60" opacity="0.1"/><circle fill="%23ffd503" cx="1000" cy="150" r="40" opacity="0.1"/></svg>');
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23222" width="1200" height="600"/><circle fill="%23ffd503" cx="300" cy="200" r="80" opacity="0.1"/><circle fill="%23ffd503" cx="800" cy="400" r="60" opacity="0.1"/><circle fill="%23ffd503" cx="1000" cy="150" r="40" opacity="0.1"/></svg>'); */
+  background-image: url("../assets/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -92,6 +119,12 @@ nav {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-text-bg {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 .cta-buttons {
@@ -180,6 +213,9 @@ nav {
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .about-image {
@@ -337,8 +373,24 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+
   .nav-links {
     display: none;
+  }
+
+  .hero-content {
+    margin-top: 10rem;
+  }
+
+  .hero-image {
+    width: 200px;
   }
 
   .hero-content h1 {
@@ -359,4 +411,8 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.h-flipped-icon {
+  transform: scaleX(-1);
 }

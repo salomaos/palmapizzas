@@ -17,12 +17,32 @@
             alt="Logo da PALMA Pizzas"
           />
         </div>
-        <ul class="nav-links">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+          <div class="nav-contact-buttons">
+            <a
+              href="https://wa.me/5511962625733?text=Olá! Gostaria de solicitar um orçamento para meu evento."
+              class="whatsapp-btn contact-btn-nav"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://instagram.com/palma.pizzas"
+              class="instagram-btn contact-btn-nav"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -30,23 +50,27 @@
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>
-            Melhor Serviço de <span class="highlight">Pizzas</span> de São
-            Paulo
+          <h1 class="hero-text-bg">
+            Melhor Serviço de <span class="highlight">Pizzas</span> de São Paulo
           </h1>
           <img
             class="hero-image"
             src="/assets/images/logo-with-bg.png"
             alt="Logo da PALMA"
           />
-          <p>
+          <p class="hero-text-bg">
             Transformamos seus eventos em experiências gastronômicas únicas com
-            nossas autênticas pizzas napolitanas, preparadas com ingredientes
-            premium e mais de 4 anos de expertise.
+            nossas autênticas pizzas artesanais, preparadas com ingredientes de
+            qualidade e mais de 4 anos de expertise. Entre em contato agora.
           </p>
-          <div class="cta-buttons">
+          <div class="cta-buttons hide-on-mobile">
             <a href="#services" class="btn btn-primary">Nossos Serviços</a>
-            <a href="#contact" class="btn btn-secondary">Fazer Pedido</a>
+            <a
+              href="https://wa.me/5511962625733?text=Olá! Gostaria de solicitar um orçamento para meu evento."
+              target="_blank"
+              class="btn btn-secondary"
+              >Fazer Pedido</a
+            >
           </div>
         </div>
       </div>
@@ -55,22 +79,26 @@
     <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
-        <h2 class="section-title">Tradição Napolitana Autêntica</h2>
+        <h2 class="section-title">Serviço Feito com Pizza de Verdade!</h2>
         <div class="about-content">
           <div class="about-text">
-            <h3>A Arte da Pizza Napolitana</h3>
+            <h3>Pizzas Rápidas e Deliciosas no Estilo Napolitanas</h3>
             <p>
               Com mais de 4 anos de experiência, somos especialistas em criar
-              pizzas napolitanas autênticas que respeitam a tradição italiana
-              centenária. Cada pizza é uma obra de arte culinária, preparada com
+              pizzas deliciosas e autênticas que respeitam seu momentos
+              especial. Cada pizza é uma obra de arte culinária, preparada com
               ingredientes selecionados e técnicas tradicionais.
             </p>
             <p>
-              Nossa massa de longa fermentação, molho de tomate San Marzano e
-              mozzarella di bufala criam uma experiência gastronômica
-              incomparável que eleva qualquer evento ao próximo nível.
+              Nossa massa de longa fermentação, molho de tomate artesanal e os
+              melhores incredientes que o cliente desejar criam uma experiência
+              gastronômica incomparável que eleva qualquer evento ao próximo
+              nível.
             </p>
-            <div class="experience-badge">✨ +4 ANOS DE EXPERIÊNCIA ✨</div>
+            <div class="experience-badge">
+              <i class="fa-solid fa-star"></i> +4 ANOS DE EXPERIÊNCIA
+              <i class="fa-solid fa-star"></i>
+            </div>
           </div>
           <div class="about-image">
             <img
@@ -128,7 +156,7 @@
         <div class="features-grid">
           <div class="feature">
             <div class="feature-icon"><i class="fa-solid fa-fire"></i></div>
-            <h4>Forno à Lenha</h4>
+            <h4>Feitas da Melhor Forma Possível</h4>
             <p>
               Cozimento em alta temperatura que garante a textura perfeita e
               sabor inigualável
@@ -140,21 +168,27 @@
             </div>
             <h4>Ingredientes Premium</h4>
             <p>
-              Selecionamos os melhores ingredientes para garantir qualidade e
-              autenticidade
+              Nós temos experiencia, conhecimento e técnica. Você escolhe como
+              quer sua pizza, nós fazemos acontecer!
             </p>
           </div>
           <div class="feature">
             <div class="feature-icon">
               <i class="fa-solid fa-pizza-slice"></i>
             </div>
-            <h4>Mestres Pizzaiolos</h4>
-            <p>Equipe especializada com técnicas tradicionais napolitanas</p>
+            <h4>Nós Amamos o que Fazemos</h4>
+            <p>
+              Equipe especializada com técnicas tradicionais e muito cuidado com
+              o preparo
+            </p>
           </div>
           <div class="feature">
             <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
             <h4>Serviço Express</h4>
-            <p>Preparação rápida sem comprometer a qualidade artesanal</p>
+            <p>
+              Preparação rápida sem comprometer a qualidade artesanal e do
+              serviço
+            </p>
           </div>
         </div>
       </div>
@@ -194,12 +228,9 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p>
-          &copy; 2024 Pizzas Napolitanas Artesanais. Todos os direitos
-          reservados.
-        </p>
+        <p>&copy; 2025 PALMA Pizzas. Todos os direitos reservados.</p>
         <p style="margin-top: 1rem; color: #ffd503">
-          Tradição italiana • Sabor autêntico • Eventos únicos
+          Pizzas artesanais • Sabor autêntico • Eventos únicos
         </p>
       </div>
     </footer>
